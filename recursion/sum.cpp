@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+// int sum(int n, int s){
+//     if(n==0){
+//         cout<<s;
+//         return 0;
+//         }
+//         sum(n-1,s+n);
+    
+// }
+
+
+
+
+// BETTER APPROACH
+int sum(int n){
+    if (n==0){return 0;}
+    return n+sum(n-1);
+}
+
+
+int main(){
+    cout<<sum(3);
+   
+    return 0;
+}
